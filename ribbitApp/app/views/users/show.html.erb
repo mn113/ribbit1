@@ -2,13 +2,14 @@
 <div id="createRibbit" class="panel right">
     <h1>Create a Ribbit</h1>
     <p>
-    <%= form_for @ribbit do |f| %>
+    <%= form_for(@ribbit) do |f| %>
         <%= f.textarea :content, class: 'ribbitText' %>
         <%= f.submit "Ribbit!" %>
     <% end %>
     </p>
 </div>
 <% end %>
+
 <div id="ribbits" class="panel left">
     <h1>Your Ribbit Profile</h1>
     <div class="ribbitWrapper">
