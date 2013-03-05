@@ -2,8 +2,8 @@
 <div id="createRibbit" class="panel right">
     <h1>Create a Ribbit</h1>
     <p>
-    <%= form_for(@ribbit) do |f| %>
-        <%= f.textarea :content, class: 'ribbitText' %>
+    <%= form_for @ribbit do |f| %>
+        <%= f.text_area :content, class: 'ribbitText' %>
         <%= f.submit "Ribbit!" %>
     <% end %>
     </p>
@@ -22,6 +22,7 @@
         </p>
     </div>
 </div>
+
 <div class="panel left">
     <h1>Your Ribbits</h1>
     <% @user.ribbits.each do |ribbit| %>

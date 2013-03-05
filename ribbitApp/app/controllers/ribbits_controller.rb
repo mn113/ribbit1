@@ -7,7 +7,7 @@ class RibbitsController < ApplicationController
     
 	def create
 	  @ribbit = Ribbit.new(params[:ribbit])
-	  @ribbit.userid = current_user.id
+	  @ribbit.user_id = current_user.id
 	  
 	  if @ribbit.save
 	      redirect_to current_user
